@@ -3,6 +3,7 @@ import "./Navigation.css"
 import Logo from "../images/logo.png"
 import { BsCart3, BsFillPersonFill } from "react-icons/bs"
 import { FiSearch } from "react-icons/fi"
+import { Link } from "gatsby"
 
 function Navigation() {
   return (
@@ -10,16 +11,28 @@ function Navigation() {
       <div className="container nav-container">
         {/* LOGO */}
         <div className="logo">
-          <img src={Logo} />
+          <Link className="nav-links-font" to="/">
+            <img src={Logo} />
+          </Link>
         </div>
 
         {/* LINKS */}
         <div className="links">
-          <a className="nav-links-font">Air Jordan</a>
-          <a className="nav-links-font">Yeezy</a>
-          <a className="nav-links-font">Off White</a>
-          <a className="nav-links-font">Sacai</a>
-          <a className="nav-links-font">Dunks</a>
+          <Link className="nav-links-font" to="/product-category/air-jordan">
+            Air Jordan
+          </Link>
+          <Link className="nav-links-font" to="/product-category/yeezy">
+            Yeezy
+          </Link>
+          <Link className="nav-links-font" to="/product-category/off-white">
+            Off White
+          </Link>
+          <Link className="nav-links-font" to="/product-category/sacai">
+            Sacai
+          </Link>
+          <Link className="nav-links-font" to="/product-category/dunks">
+            Dunks
+          </Link>
         </div>
 
         {/* SEARCH BAR */}

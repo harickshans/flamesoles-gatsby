@@ -1,14 +1,9 @@
 import React from "react"
-import Navigation from "../components/Navigation"
+import Layout from "../components/Layout"
 import "./index.css"
 
 function index() {
-  return (
-    <div>
-      <Navigation />
-      Home
-    </div>
-  )
+  return <Layout>Home</Layout>
 }
 
 export default index
