@@ -1,0 +1,31 @@
+.product-row {
+  display: grid;
+  /* grid-template-columns: repeat(6, 1fr); */
+  column-gap: 30px;
+}
+
+.product-box {
+  height: 280px;
+  border: 0.5px solid rgb(219, 219, 219);
+  border-radius: 3px;
+  padding: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+.product-box-image {
+  width: 100%;
+}
+.product-box-name {
+  margin: 15px 0;
+  color: #0f0f0f;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.product-box-price {
+  font-weight: 900;
+  font-size: 24px;
+}

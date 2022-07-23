@@ -1,5 +1,5 @@
 import React from "react"
-import "./Navigation.css"
+import "./css/Navigation.css"
 import Logo from "../images/logo.png"
 import { BsCart3, BsFillPersonFill } from "react-icons/bs"
 import { FiSearch } from "react-icons/fi"
