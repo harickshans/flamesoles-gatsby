@@ -13,42 +13,42 @@ function ProductRow({ boxes, title }) {
       >
         <div className="product-box">
           <img className="product-box-image" src={ShoeImage} />
-          <Link className="product-box-name" to="/">
+          <Link className="product-box-name" to="/product/shoe">
             Nike Dunk Low Georgetown
           </Link>
           <h3 className="product-box-price">$220</h3>
         </div>
         <div className="product-box">
           <img className="product-box-image" src={ShoeImage} />
-          <Link className="product-box-name" to="/">
+          <Link className="product-box-name" to="/product/shoe">
             Nike Dunk Low Georgetown
           </Link>
           <h3 className="product-box-price">$220</h3>
         </div>
         <div className="product-box">
           <img className="product-box-image" src={ShoeImage} />
-          <Link className="product-box-name" to="/">
+          <Link className="product-box-name" to="/product/shoe">
             Nike Dunk Low Georgetown
           </Link>
           <h3 className="product-box-price">$220</h3>
         </div>
         <div className="product-box">
           <img className="product-box-image" src={ShoeImage} />
-          <Link className="product-box-name" to="/">
+          <Link className="product-box-name" to="/product/shoe">
             Nike Dunk Low Georgetown
           </Link>
           <h3 className="product-box-price">$220</h3>
         </div>
         <div className="product-box">
           <img className="product-box-image" src={ShoeImage} />
-          <Link className="product-box-name" to="/">
+          <Link className="product-box-name" to="/product/shoe">
             Nike Dunk Low Georgetown
           </Link>
           <h3 className="product-box-price">$220</h3>
         </div>
         <div className="product-box">
           <img className="product-box-image" src={ShoeImage} />
-          <Link className="product-box-name" to="/">
+          <Link className="product-box-name" to="/product/shoe">
             Nike Dunk Low Georgetown
           </Link>
           <h3 className="product-box-price">$220</h3>
