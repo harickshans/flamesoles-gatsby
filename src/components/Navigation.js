@@ -46,7 +46,9 @@ function Navigation() {
             <BsCart3 />
           </button>
           <button className="icon-buttons">
-            <BsFillPersonFill />
+            <Link to="/signup">
+              <BsFillPersonFill />
+            </Link>
           </button>
         </div>
       </div>

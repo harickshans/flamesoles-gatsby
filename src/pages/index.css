@@ -6,10 +6,18 @@
 }
 .container {
   max-width: 1280px;
-
   margin: 0 auto;
 }
+.center-container {
+  border-radius: 15px;
+  width: 800px;
+  height: 500px;
+  margin: auto;
 
+  display: flex;
+  overflow: hidden;
+  box-shadow: -1px 0px 4px #0000003b;
+}
 /* SPEACIAL CLASSES */
 .nav-links-font {
   color: #000;

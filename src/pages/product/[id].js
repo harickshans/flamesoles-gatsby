@@ -2,13 +2,17 @@ import React from "react"
 import Layout from "../../components/Layout"
 import ProductRow from "../../components/ProductRow"
 import "./productPage.css"
+import shoeImage from "../../images/shoe.webp"
 
 function ProductPage() {
   return (
     <Layout>
       <div className="container">
         <div className="product-showcase">
-          <div className="product-image-details"></div>
+          <div className="product-image-details">
+            <h2>Jordan 1 High OG SP Fragment x Travis Scott</h2>
+            <img src={shoeImage} />
+          </div>
           <div className="product-price-details"></div>
         </div>
 

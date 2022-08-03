@@ -43,7 +43,21 @@
   margin-bottom: 100px;
 }
 .product-showcase > div {
-  padding: 0 30px;
+  padding: 30px 30px;
   width: 100%;
   flex: 0 0 50%;
+}
+.product-image-details {
+  display: flex;
+  flex-direction: column;
+}
+.product-image-details > h2 {
+  font-family: "SuisseIntl-Medium", Sans-serif;
+  font-size: 24px;
+  color: #0a0a0a;
+}
+.product-image-details > img {
+  /* display: block; */
+  width: 80%;
+  margin: 0 auto;
 }
