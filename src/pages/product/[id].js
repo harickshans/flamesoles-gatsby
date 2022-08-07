@@ -3,6 +3,10 @@ import Layout from "../../components/Layout"
 import ProductRow from "../../components/ProductRow"
 import "./productPage.css"
 import shoeImage from "../../images/shoe.webp"
+import { FiCheckCircle } from "react-icons/fi"
+import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai"
+import { BsTwitter, BsFacebook, BsLinkedin, BsPinterest } from "react-icons/bs"
+import { BiPaperclip } from "react-icons/bi"
 
 function ProductPage() {
   return (
@@ -13,7 +17,69 @@ function ProductPage() {
             <h2>Jordan 1 High OG SP Fragment x Travis Scott</h2>
             <img src={shoeImage} />
           </div>
-          <div className="product-price-details"></div>
+          <div className="product-price-details">
+            <h1>$220</h1>
+            <div className="size-container">
+              <h6>SHOES-SIZE</h6>
+              <div className="sized">
+                <input type="radio" name="sizes" value="6.5" id="size-1" />
+                <label for="size-1">6.5</label>
+                <input type="radio" name="sizes" value="7" id="size-2" />
+                <label for="size-2">7</label>
+                <input type="radio" name="sizes" value="7.5" id="size-3" />
+                <label for="size-3">7.5</label>
+                <input type="radio" name="sizes" value="8" id="size-4" />
+                <label for="size-4">8</label>
+                <input type="radio" name="sizes" value="8.5" id="size-5" />
+                <label for="size-5">8.5</label>
+                <input type="radio" name="sizes" value="9" id="size-6" />
+                <label for="size-6">9</label>
+                <input type="radio" name="sizes" value="9.5" id="size-7" />
+                <label for="size-7">9.5</label>
+                <input type="radio" name="sizes" value="10" id="size-8" />
+                <label for="size-8">10</label>
+                <input type="radio" name="sizes" value="10.5" id="size-9" />
+                <label for="size-9">10.5</label>
+              </div>
+            </div>
+            <div className="stock-container">
+              <FiCheckCircle /> <span>In Stock</span>
+            </div>
+            <div className="addToCart-container">
+              <div className="counter-container">
+                <button id="dec">
+                  <AiOutlineMinus />
+                </button>
+                <input
+                  type="number"
+                  id="product-count"
+                  placeholder="0"
+                  min="0"
+                  disabled="disabled"
+                />
+
+                <button id="inc">
+                  <AiOutlinePlus />
+                </button>
+              </div>
+              <button id="addToCard-btn" className="btn-price">
+                ADD TO CART
+              </button>
+            </div>
+            <button id="buyNow-btn" className="btn-price">
+              BUY NOW
+            </button>
+            <div className="share-container">
+              <h6>SHARE</h6>
+              <div className="social-icons">
+                <BsTwitter />
+                <BsFacebook />
+                <BsLinkedin />
+                <BsPinterest />
+                <BiPaperclip />
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="hr"></div>
