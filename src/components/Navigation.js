@@ -43,7 +43,9 @@ function Navigation() {
         {/* ICONS */}
         <div className="icons">
           <button className="icon-buttons">
-            <BsCart3 />
+            <Link to="/cart">
+              <BsCart3 />
+            </Link>
           </button>
           <button className="icon-buttons">
             <Link to="/signup">
