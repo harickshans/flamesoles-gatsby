@@ -41,7 +41,7 @@ function airJordan() {
             </div>
           </div>
         </div>
-        <ProductRow boxes={4} />
+        <ProductRow />
       </div>
     </Layout>
   )

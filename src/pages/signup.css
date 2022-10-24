@@ -64,3 +64,16 @@ form {
 .form-container input:focus {
   outline: none;
 }
+
+@media only screen and (max-width: 1280px) {
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 768px) {
+  .center-container-image {
+    flex: 0 0 00%;
+    display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+}

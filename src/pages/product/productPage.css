@@ -39,7 +39,7 @@
 .product-showcase {
   display: flex;
   width: 90%;
-  height: 500px;
+  height: auto;
   gap: 30px;
   /* margin-bottom: 100px; */
   margin: 0 auto 100px;
@@ -186,4 +186,21 @@ input[type="number"] {
 .social-icons > svg {
   cursor: pointer;
   margin-right: 15px;
+}
+
+@media only screen and (max-width: 1280px) {
+}
+@media only screen and (max-width: 992px) {
+  .product-showcase {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .product-showcase > div {
+    padding: 10px 10px;
+    width: 100%;
+    flex: 0 0 45%;
+  }
+}
+@media only screen and (max-width: 400px) {
 }

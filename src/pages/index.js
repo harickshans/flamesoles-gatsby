@@ -8,9 +8,7 @@ function index() {
   return (
     <Layout>
       <Header />
-      <ProductRow boxes="6" title="Trending Sneakers" />
-      <ProductRow boxes="6" />
-      <ProductRow boxes="6" />
+      <ProductRow boxes="18" title="Trending Sneakers" />
     </Layout>
   )
 }
