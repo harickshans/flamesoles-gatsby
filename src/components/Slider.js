@@ -7,7 +7,7 @@ function Slider({ style }) {
     <div className="slider-container" style={style}>
       <ThreeSixty
         amount={33}
-        imagePath="/threesixty/01"
+        imagePath="/threesixty0/01"
         // imagePath="images/threesixty/01"
         fileName="img{index}.jpg?v1"
       />
