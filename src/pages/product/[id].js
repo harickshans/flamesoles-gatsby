@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import Layout from "../../components/Layout"
 import ProductRow from "../../components/ProductRow"
 import "./productPage.css"
@@ -7,15 +7,40 @@ import { FiCheckCircle } from "react-icons/fi"
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai"
 import { BsTwitter, BsFacebook, BsLinkedin, BsPinterest } from "react-icons/bs"
 import { BiPaperclip } from "react-icons/bi"
+import { MdOutline360 } from "react-icons/md"
+import Slider from "../../components/Slider"
 
 function ProductPage() {
+  const [threesixty, setThreesixty] = useState(false)
+
+  const imageSwitcher = () => {
+    console.log("fffff")
+    setThreesixty(!threesixty)
+    console.log(threesixty)
+  }
+
   return (
     <Layout>
       <div className="container">
         <div className="product-showcase">
           <div className="product-image-details">
             <h2>Jordan 1 High OG SP Fragment x Travis Scott</h2>
-            <img src={shoeImage} />
+            <div className="image-container">
+              <Slider
+                style={threesixty ? { display: "block" } : { display: "none" }}
+              />
+              <img src={shoeImage} />
+              <div className="image-switcher">
+                <input
+                  type="checkbox"
+                  id="image-switcher"
+                  onChange={imageSwitcher}
+                />
+                <label for="image-switcher">
+                  <MdOutline360 />
+                </label>
+              </div>
+            </div>
           </div>
           <div className="product-price-details">
             <h1>$220</h1>

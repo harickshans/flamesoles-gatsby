@@ -1,0 +1,40 @@
+.slider-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+}
+.image-switcher {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  z-index: 3;
+}
+.image-switcher > input {
+  display: none;
+}
+.image-switcher > label > svg {
+  width: 100%;
+  height: 100%;
+}
+.image-switcher > label {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #242424;
+  cursor: pointer;
+  padding: 4px;
+  border: 0.5px solid #eee;
+  width: 49px;
+  border-radius: 3px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-switcher input[type="checkbox"]:checked + label {
+  background-color: rgb(204, 204, 204);
+}

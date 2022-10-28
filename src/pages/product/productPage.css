@@ -52,15 +52,23 @@
 .product-image-details {
   display: flex;
   flex-direction: column;
+  background-color: #fff;
 }
 .product-image-details > h2 {
   font-family: "SuisseIntl-Medium", Sans-serif;
   font-size: 24px;
   color: #0a0a0a;
 }
-.product-image-details > img {
+.image-container {
   /* display: block; */
-  width: 80%;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.image-container > img {
+  /* display: block; */
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -203,4 +211,8 @@ input[type="number"] {
   }
 }
 @media only screen and (max-width: 400px) {
+}
+.hide {
+  display: none;
+  z-index: -1;
 }
