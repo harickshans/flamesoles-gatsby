@@ -8,6 +8,7 @@ function Slider({ style }) {
       <ThreeSixty
         amount={33}
         imagePath="/threesixty/01"
+        // imagePath="images/threesixty/01"
         fileName="img{index}.jpg?v1"
       />
     </div>

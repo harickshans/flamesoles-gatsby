@@ -14,9 +14,7 @@ function ProductPage() {
   const [threesixty, setThreesixty] = useState(false)
 
   const imageSwitcher = () => {
-    console.log("fffff")
     setThreesixty(!threesixty)
-    console.log(threesixty)
   }
 
   return (
