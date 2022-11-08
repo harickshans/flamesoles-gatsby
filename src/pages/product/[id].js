@@ -25,6 +25,7 @@ function ProductPage() {
             <h2>Jordan 1 High OG SP Fragment x Travis Scott</h2>
             <div className="image-container">
               <Slider
+                className="slider"
                 style={threesixty ? { display: "block" } : { display: "none" }}
               />
               <img src={shoeImage} />

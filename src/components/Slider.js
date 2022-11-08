@@ -6,10 +6,10 @@ function Slider({ style }) {
   return (
     <div className="slider-container" style={style}>
       <ThreeSixty
+        className="slider"
         amount={33}
-        imagePath="/threesixty0/01"
-        // imagePath="images/threesixty/01"
-        fileName="img{index}.jpg?v1"
+        imagePath="https://majestic-malabi-eba784.netlify.app/01/"
+        fileName="img{index}.jpg"
       />
     </div>
   )

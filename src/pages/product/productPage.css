@@ -61,10 +61,11 @@
 }
 .image-container {
   /* display: block; */
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 .image-container > img {
   /* display: block; */
